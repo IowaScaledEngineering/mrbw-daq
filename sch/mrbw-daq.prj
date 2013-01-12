@@ -1,4 +1,4 @@
-schematics mrb-daq.sch
-output-name ../pcb/mrb-daq
+schematics mrbw-daq.sch
+output-name ../pcb/mrbw-daq
 skip-m4
 elements-dir ../../../footprints
