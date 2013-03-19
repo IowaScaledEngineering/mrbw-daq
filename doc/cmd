@@ -1,0 +1,28 @@
+Commands
+--------
+
+CA<n> - Raw ADC Read
+Read ADC Channel <n>, return ca<dddd> where <dddd> = 32bit result from ADC
+Channel selection <n> bits [4:0] follow 2499 Table 3.  Bits [7:5] ignored.
+
+CT - ADC Temperature Read
+Returns ct<tt> where <tt> is the kelvin value in 1/16 K (our standard).
+
+CC<b> - Configure ADC
+Configure ADC.  
+
+CD<n><dd> - DAC Set
+Set DAC Channel <n> to <dd> code, where <n> bits [1:0] are defined by AD5627 Table 9.
+Return cd<n><dd> where <dd> is the code written.  Return with a high bit in
+<n> set as a flag if invalid (out of range) code requested.
+
+CO<b><p> - GPIO Configuration
+Sets GPIO data direction based on <b>, using AVR DDR nomenclature.
+Enables internal pull-ups based on <p>.
+Returns co<b><p>
+
+CG<d> - GPIO Set/Read
+Sets GPIO to <d>.  Returns cg<b> where <b> = read back value of all pins.
+
+---
+How to handle other boards plugged in via I2C jack?

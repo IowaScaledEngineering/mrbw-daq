@@ -1,0 +1,5 @@
+          Init Acc  TC     IDD        Load Reg       Line Reg   Digikey  Pkg
+LTC6652A  0.05%     5ppm   350uA    5mA (450ppm/mA)  80ppm/V    $6.76   MSOP-10
+LTC6652B  0.10%    10ppm   350uA    5mA (450ppm/mA)  80ppm/V    $3.32   MSOP-10
+LT6654A   0.05%    10ppm   350uA   10mA  (30ppm/mA)  10ppm/V    $6.50   SOT-23-6
+LT6654B   0.10%    20ppm   350uA   10mA  (30ppm/mA)  10ppm/V    $3.83   SOT-23-6
